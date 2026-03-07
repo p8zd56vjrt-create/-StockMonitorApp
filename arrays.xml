@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通知频率选项 -->
+    <string-array name="notification_frequency_entries">
+        <item>1秒</item>
+        <item>5秒</item>
+        <item>10秒</item>
+        <item>30秒</item>
+        <item>1分钟</item>
+    </string-array>
+
+    <string-array name="notification_frequency_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <!-- 通知类型选项 -->
+    <string-array name="notification_type_entries">
+        <item>所有通知</item>
+        <item>仅技术指标信号</item>
+        <item>仅价格变动</item>
+    </string-array>
+
+    <string-array name="notification_type_values">
+        <item>all</item>
+        <item>technical</item>
+        <item>price</item>
+    </string-array>
+
+</resources>

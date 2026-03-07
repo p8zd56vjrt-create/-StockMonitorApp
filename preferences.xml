@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="通知设置">
+
+        <SwitchPreference
+            android:key="notification_enabled"
+            android:title="开启通知"
+            android:summary="接收股票价格变动和技术指标信号的通知"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="notification_frequency"
+            android:title="通知频率"
+            android:summary="设置通知的频率"
+            android:entries="@array/notification_frequency_entries"
+            android:entryValues="@array/notification_frequency_values"
+            android:defaultValue="5" />
+
+        <ListPreference
+            android:key="notification_type"
+            android:title="通知类型"
+            android:summary="选择接收的通知类型"
+            android:entries="@array/notification_type_entries"
+            android:entryValues="@array/notification_type_values"
+            android:defaultValue="all" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="应用设置">
+
+        <SwitchPreference
+            android:key="dark_mode"
+            android:title="深色模式"
+            android:summary="启用应用的深色主题"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="about"
+            android:title="关于"
+            android:summary="关于股票盯盘应用" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
